@@ -11,7 +11,7 @@ DeviceScreenType getDeviceType(
   Size size, [
   ScreenBreakpoints breakpoint,
 ]) {
-  double deviceWidth = size.shortestSide;
+  double deviceWidth = size.width;
 
   if (kIsWeb) {
     deviceWidth = size.width;
